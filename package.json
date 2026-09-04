@@ -1,0 +1,42 @@
+{
+  "name": "flumen-backend",
+  "version": "1.0.0",
+  "description": "API REST para Flumen - plataforma de streaming de videos",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/utils/seed.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "streaming",
+    "video",
+    "express",
+    "api"
+  ],
+  "author": "Flumen",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.115.0",
+    "axios": "^1.20.0",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.19.2",
+    "express-rate-limit": "^8.7.0",
+    "express-validator": "^7.3.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.0",
+    "multer": "^2.3.0",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "pg": "^8.23.0",
+    "stripe": "^22.6.1"
+  }
+}
